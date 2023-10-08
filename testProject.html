@@ -1,0 +1,34 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="testproject.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    </head>
+    <body  style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #212529;">
+        <div class="container" >
+        <form class="bg-dark text-light p-2" >
+            <fieldset>
+                <legend>RegEx</legend>
+            <div class="form-group mb-3">
+            <label for="searchword" class="form-label">Search any word</label>
+            <input type="text" class="form-control" name="searchword" id="searchword" placeholder="Search" required>
+            </div>
+
+            <div class="form-group mb-3">
+            <label for="replaceWord" class="form-label">Replace it with</label>
+            <input type="text" class="form-control" name="replaceWord" id="replaceWord" placeholder="Replaced Word">
+            </div>
+            <div class="mx-auto p-s mb-3" style="width: 200px;">
+            <input type="button" class="btn btn-primary" value="Replace" onclick="replace()">
+            </div>
+            <div class="form-floating mb-3">
+            <textarea class="form-control" name="textarea" id="textarea" style="height: 200px ;">RegExr was created by gskinner.com. Edit the Expression & Text to see matches. Roll over matches or the expression for details. PCRE & JavaScript flavors of RegEx are supported. Validate your expression with Tests mode. The side bar includes a Cheatsheet, full Reference, and Help. You can also Save & Share with the Community and view patterns you create or favorite in My Patterns. Explore results with the Tools below. Replace & List output custom results. Details lists capture groups. Explain describes your expression in plain English.</textarea>
+            </div>
+            </fieldset>
+        </form>
+    </div>
+    </body>
+    </html>
